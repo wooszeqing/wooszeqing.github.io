@@ -69,7 +69,7 @@ btnComplete.addEventListener("click", CheckAns); // button to call function
 const whale = document.getElementById("whale");
 const gameAreaSize = 500;  // width and height of #gameArea
 const whaleSize = 100;     // size of the image
-const soundEffect = new Audio("../lab2_szeqing_253266U_A2/audio/yippee.mp3");
+const soundEffect = new Audio("../webdevA2/audio/yippee.mp3");
 let score = 0;
 
 function moveWhale() {
