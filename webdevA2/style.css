@@ -6,7 +6,9 @@
     justify-content: center;
     /* centers vertically */
     padding: 2em;
+    width: 100%;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 
@@ -21,6 +23,8 @@ body {
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-color: rgba(0, 0, 0, 0.1);
+    overflow-x: hidden;
+    max-width: 100%;
 }
 
 main {
