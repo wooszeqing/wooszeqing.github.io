@@ -73,6 +73,7 @@ button {
     color: rgb(23, 66, 127);
     background-color: rgb(75, 168, 238);
     transition-duration: 0.4s;
+    font-family: 'ThisNotes';
 }
 
 button:hover {
@@ -81,6 +82,10 @@ button:hover {
 
 fieldset {
     padding: 1em;
+}
+
+.question {
+    font-family: 'ThisNotes';
 }
 
 fieldset label,
@@ -141,6 +146,7 @@ p {
     flex-wrap: wrap;
     justify-content: center;
     padding: 2em;
+    font-family: 'ThisNotes';
     font-size: 1.3em;
     background-color: rgba(94, 186, 216, 0.7);
     border-radius: 4px;
@@ -156,6 +162,7 @@ figcaption {
     padding-left: 5%;
     justify-content: center;
     padding: 2em;
+    font-family: 'Euphoria';
 }
 
 figure {
@@ -172,6 +179,7 @@ h1 {
     display: flex;
     justify-content: center;
     color: rgb(23, 66, 127);
+    font-family: 'SweetAromatic';
 }
 
 nav {
@@ -183,18 +191,27 @@ h2 {
     display: flex;
     justify-content: center;
     color: rgb(23, 66, 127);
+    font-family: 'SweetAromatic';
+    font-size: 2em;
 }
 
 h3 {
     display: flex;
     justify-content: center;
     color: rgb(23, 66, 127);
+    font-family: 'SweetAromatic';
+    font-size: 1.5em;
 }
 
 #info {
     display: flex;
     justify-content: center;
     padding: 2em 0;
+    font-family: 'Euphoria';
+}
+
+#identity {
+    font-family: 'ThisNotes';
 }
 
 .info-box {
@@ -314,4 +331,20 @@ h3 {
     .qrCode {
         display: none;
     }
+}
+
+/* fonts used */
+@font-face {
+    font-family: 'Euphoria';
+    src: url(../webdevA2/fonts/EuphoriaFree.otf);
+}
+
+@font-face {
+    font-family: 'SweetAromatic';
+    src: url(../webdevA2/fonts/SweetAromatic.otf);
+}
+
+@font-face {
+    font-family: 'ThisNotes';
+    src: url(../webdevA2/fonts/ThisNotes.ttf);
 }
