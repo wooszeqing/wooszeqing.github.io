@@ -67,14 +67,17 @@ function CheckAns() {
 btnComplete.addEventListener("click", CheckAns); // button to call function
 
 const whale = document.getElementById("whale");
-const gameAreaSize = 500;  // width and height of #gameArea
-const whaleSize = 100;     // size of the image
 const soundEffect = new Audio("../webdevA2/audio/yippee.mp3");
 let score = 0;
 
 function moveWhale() {
-    const maxX = gameAreaSize - whaleSize;
-    const maxY = gameAreaSize - whaleSize;
+    const gameArea = document.getElementById("gameArea");
+    const rect = gameArea.getBoundingClientRect(); // Get actual size
+    const whaleWidth = whale.offsetWidth;
+    const whaleHeight = whale.offsetHeight;
+
+    const maxX = rect.width - whaleWidth;
+    const maxY = rect.height - whaleHeight;
 
     const x = Math.random() * maxX;
     const y = Math.random() * maxY;

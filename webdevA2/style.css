@@ -15,7 +15,7 @@ body {
     margin: 0;
     display: flex;
     flex-direction: column;
-    background-image: url("../webdevA2/images/ocean.jpg");
+    background-image: url("../webdevA2/images/smallocean.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -49,13 +49,19 @@ nav ul li {
 }
 
 #fullscreenBtn {
-    display: block;      /* make it block to respect margins */
-    margin: 0 auto;      /* horizontally center */
+    display: block;
+    /* make it block to respect margins */
+    margin: 0 auto;
+    /* horizontally center */
 }
+
 #exitFullscreenBtn {
-    display: block;      /* make it block to respect margins */
-    margin: 0 auto;      /* horizontally center */
+    display: block;
+    /* make it block to respect margins */
+    margin: 0 auto;
+    /* horizontally center */
 }
+
 /*quiz*/
 button {
     padding: 10px 10px 10px 10px;
@@ -108,7 +114,8 @@ label:hover {
 }
 
 legend {
-  cursor: default; /* changes from pointer to regular arrow */
+    cursor: default;
+    /* changes from pointer to regular arrow */
 }
 
 #btnComplete:hover {
@@ -213,7 +220,7 @@ h3 {
     justify-content: center;
 }
 
-#gameScore{
+#gameScore {
     padding: 1em 2em;
     text-align: center;
     width: fit-content;
@@ -229,7 +236,8 @@ h3 {
 }
 
 #quiz {
-    background-color: rgba(94, 186, 216, 0.7);;
+    background-color: rgba(94, 186, 216, 0.7);
+    ;
 }
 
 /* --- MOBILE VIEW --- */
@@ -281,5 +289,25 @@ h3 {
 
     nav ul li button:hover {
         background-color: #555;
+    }
+
+    #gameArea {
+        width: 250px;
+        height: 250px;
+        border: 3px solid #000;
+        margin: 0 auto;
+        position: relative;
+        background-color: #2d70cf;
+    }
+}
+
+.qr-code {
+    display: block;
+}
+
+/* Hide on screens smaller than 800px*/
+@media (max-width: 800px) {
+    .qrCode {
+        display: none;
     }
 }
